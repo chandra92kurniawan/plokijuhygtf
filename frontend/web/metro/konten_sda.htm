@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="jasney/css/jasny-bootstrap.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro-icons.min.css"/>
+    <link rel="stylesheet" href="jasney/navmenu.css"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Metro-UI-CSS-master/build/js/metro.min.js"></script>
+    <script type="text/javascript" src="jasney/js/jasny-bootstrap.min.js"></script>
+    <style>
+    #page-loader{
+        position:fixed!important;
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        z-index:9999;
+        background:#fff url('logotasik.png') no-repeat 50% 50%;
+        color:#fcfcfc;
+        padding:1em 1.2em;
+        display:none;
+    }
+    .tile-group span.tile-group-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    body{
+        background: url('waterfall.jpg') no-repeat;
+        background-size: cover;
+    }
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.5);
+        padding:.5rem;
+        -webkit-transition:.6s background;
+        transition:.6s background;
+    }
+    a.mn:hover{
+        background:rgba(0,0,0,.9)
+    }
+    p.title-mn{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    </style>
+    <script>
+    $(function(){
+        $(document.body).append('<div id="page-loader">Loading...</div>');
+        $(window).on("beforeunload", function(){
+            //$('#page-loader').fadeIn(1000).delay(10000).fadeOut(1000);
+            $('#loadmdl').modal('show');
+        });
+    });
+    $(function(){
+        
+        //$('.tile-group-title').slideDown();
+        //$(".jdl-tile").animate({top: '19%'});
+        $(".jdl-tile").fadeIn(1000,function(){
+            $(".jdl-tile").animate({top: '19%'});
+        });
+        //$(".jdl-tile").animate({top: '19%'});
+        //$(".tile-container").animate({left: '30%'});
+    });
+    </script>
+	<title>Untitled 2</title>
+</head>
+
+<body>
+<div id="loadmdl" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="margin-top: 10%;">
+  <div class="modal-dialog modal-sm">
+    <img src="logotasik.png" style="width: 50%;"/>
+  </div>
+</div>
+
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm" style="width: 7%; opacity: 0.9;">
+      <a class="navmenu-brand visible-md visible-lg" href="#"></a>
+      <ul class="nav navmenu-nav">
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <span class="icon mif-shopping-basket"></span>
+                </div>
+                
+            </div>
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+
+    <div class="main container" style="margin-left: 0;">
+      <div class="page-header">
+        <h1>Navmenu Template</h1>
+      </div>
+      
+      <div class="container" style="background: white;">
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+        <p>aa</p>
+      </div>
+      
+      <div class="container" style="height: 15%;background: black; width: 100%; opacity: 0.7;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" title="Bidang Energi" href="sda.htm"><span class="mif-water fg-green mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Sumber Daya Air</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" href="presenter.htm"><span class="mif-apps fg-white mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Home</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p text-center">
+                    <a class="mn" href="irigasi.htm" title="Irigasi"><span class="mif-cloud fg-blue mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Irigasi</p>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+</body>
+</html>

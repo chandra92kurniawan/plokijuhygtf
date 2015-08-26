@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro-icons.min.css"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Metro-UI-CSS-master/build/js/metro.min.js"></script>
+    <style>
+    body{
+        margin:0;
+        background:#000
+    }
+    video{
+        position:fixed
+        ;top:50%;
+        left:50%;
+        min-width:100%;
+        min-height:100%;
+        width:auto;
+        height:auto;
+        z-index:-100;
+        -webkit-transform:translateX(-50%) translateY(-50%);
+        transform:translateX(-50%) translateY(-50%);
+        background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) no-repeat;
+        background-size:
+        cover;-webkit-transition:1s opacity;
+        transition:1s opacity
+    }
+    
+    
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.5);
+        padding:.5rem;-webkit-transition:.6s background;
+        transition:.6s background
+    }a.mn:hover{
+        background:rgba(0,0,0,.9)
+    }
+    .stopfade{opacity:.5}
+    #polina button{
+        display:block;
+        width:80%;
+        padding:.4rem;
+        border:none;
+        margin:1rem auto;
+        font-size:1.3rem;
+        background:rgba(255,255,255,.23);
+        color:#fff;
+        border-radius:3px;
+        cursor:pointer;
+        -webkit-transition:.3s background;
+        transition:.3s background
+    }
+    #polina button:hover{
+        background:rgba(0,0,0,.5)
+    }
+    @media screen and (max-width:500px){div{width:70%}}
+    @media all and (max-device-width:800px){
+        body{background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) #000 no-repeat center center fixed;
+        background-size:cover
+    }
+    #bgvid,#polina button{
+        display:none
+    }
+    .title-mn{
+        font-size: 15px;
+        font-weight: bold;
+        color:white;
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    </style>
+	<title>Untitled 2</title>
+</head>
+
+<body>
+ <video autoplay loop poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
+<source src="http://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+<source src="http://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+</video>
+<div class="container" style="width: 100%;">
+    
+    
+    <div class="row">
+        <div class="col-md-6"><h2 style="color: white;" class="tile-area-title">Start</h2></div>
+        <div class="col-md-6">
+            <div class="tile-area-controls" style="padding-top: 10px;margin-left: 300px;">
+                <button class="image-button icon-right bg-transparent fg-white bg-hover-dark no-border"><span class="sub-header no-margin text-light">Sergey Pimenov</span> <span class="icon mif-user"></span></button>
+                <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showCharms('#charmSearch')"><span class="mif-search"></span></button>
+                <button class="square-button bg-transparent fg-white bg-hover-dark no-border" onclick="showCharms('#charmSettings')"><span class="mif-cog"></span></button>
+                <a href="../tiles.html" class="square-button bg-transparent fg-white bg-hover-dark no-border"><span class="mif-switch"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        `   <div class="tile-group double" style="left: 0px;">
+            <span class="tile-group-title">Images</span>
+            <div class="tile-container">
+                <div class="tile-wide" data-role="tile" data-effect="slideLeft" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content">
+                        <a href="http://google.com/search?q=bear" class="live-slide" style="left: -310px;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/1.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></a>
+                        <a href="http://google.com/search?q=cat" class="live-slide" style="left: -310px; display: inline;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/2.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></a>
+                        <a href="http://google.com/search?q=dog" class="live-slide" style="left: -310px; display: inline;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/3.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></a>
+                        <a href="http://google.com/search?q=eagle" class="live-slide" style="left: -310px; display: inline;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/4.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></a>
+                        <a href="http://google.com/search?q=fox" class="live-slide" style="left: 0px; display: inline;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/5.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></a>
+                    </div>
+                    <div class="tile-label">Gallery</div>
+                </div>
+                <div class="tile" data-role="tile" data-effect="slideUpDown" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content">
+                        <div class="live-slide" style="top: 150px;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/me.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></div>
+                        <div class="live-slide" style="top: 0px; display: block;"><div class="image-container image-format-fill" style="width: 100%; height: 100%;"><div class="frame"><div style="width: 100%; height: 100%; border-radius: 0px; background-image: url(https://metroui.org.ua/images/spface.jpg); background-size: cover; background-repeat: no-repeat;"></div></div></div></div>
+                    </div>
+                    <div class="tile-label">Photos</div>
+                </div>
+                <div class="tile-small bg-amber fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-video-camera"></span>
+                    </div>
+                </div>
+                <div class="tile-small bg-green fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-gamepad"></span>
+                    </div>
+                </div>
+                <div class="tile-small bg-pink fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-headphones"></span>
+                    </div>
+                </div>
+                <div class="tile-small bg-yellow fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-lock"></span>
+                    </div>
+                </div>
+
+                <div class="tile-wide bg-orange fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content image-set">
+                        <img src="../images/jeki_chan.jpg">
+                        <img src="../images/shvarcenegger.jpg">
+                        <img src="../images/vin_d.jpg">
+                        <img src="../images/jolie.jpg">
+                        <img src="../images/jek_vorobey.jpg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="tile-group double" style="left: 0px;">
+            <span class="tile-group-title">General</span>
+
+            <div class="tile-container">
+
+                <a href="http://calendar.google.com" class="tile bg-indigo fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-calendar"></span>
+                    </div>
+                    <span class="tile-label">Calendar</span>
+                </a>
+
+                <div class="tile bg-darkBlue fg-white" data-role="tile" onclick="document.location.href='http://gmail.com'" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-envelop"></span>
+                    </div>
+                    <span class="tile-label">Inbox</span>
+                </div>
+
+                <div class="tile-large bg-steel fg-white" data-role="tile" data-on-click="document.location.href='http://weather.com'" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content" style="background: url(../images/clouds2.png) top left no-repeat; background-size: cover">
+                        <div class="padding10">
+                            <h1>57°</h1>
+                            <h2>San Francisco</h2>
+                            <h5>Party Cloudy</h5>
+                            <p class="tertiary-text fg-white no-margin">Today</p>
+                            <p class="tertiary-text fg-white no-margin">63°/55° Mostly Clear</p>
+                            <p class="tertiary-text fg-white no-margin">Tomorrow</p>
+                            <p class="tertiary-text fg-white no-margin">64°/54° Mostly Clear</p>
+                        </div>
+                    </div>
+                    <span class="tile-label">Weather</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="tile-group one" style="left: 0px;">
+            <span class="tile-group-title">Office</span>
+
+            <div class="tile-small bg-blue" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <img src="https://metroui.org.ua/images/outlook.png" class="icon">
+                </div>
+            </div>
+            <div class="tile-small bg-darkBlue" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <img src="https://metroui.org.ua/images/word.png" class="icon">
+                </div>
+            </div>
+            <div class="tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <img src="https://metroui.org.ua/images/excel.png" class="icon">
+                </div>
+            </div>
+            <div class="tile-small bg-red" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <img src="https://metroui.org.ua/images/access.png" class="icon">
+                </div>
+            </div>
+            <div class="tile-small bg-orange" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <div class="tile-content iconic">
+                    <img src="https://metroui.org.ua/images/powerpoint.png" class="icon">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="container" style="width: 100%;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" title="Bidang Energi" href="sda.htm"><span class="mif-water fg-green mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Bidang Energi</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" href="pertambangan.htm"><span class="mif-apps fg-white mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Home</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p text-center">
+                    <a class="mn" href="irigasi.htm" title="Irigasi"><span class="mif-cloud fg-blue mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Irigasi</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+</div>
+<script>var video=document.getElementById("bgvid"),pauseButton=document.querySelector("#polina button");function vidFade(){video.classList.add("stopfade");}
+video.addEventListener('ended',function()
+{video.pause();vidFade();},false);pauseButton.addEventListener("click",function(){video.classList.toggle("stopfade");if(video.paused){video.play();pauseButton.innerHTML="Pause";}else{video.pause();pauseButton.innerHTML="Paused";}},false);video.addEventListener('touchstart',function(e){e.preventDefault();video.play();})</script>
+</body>
+</html>

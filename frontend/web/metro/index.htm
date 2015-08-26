@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro-icons.min.css"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Metro-UI-CSS-master/build/js/metro.min.js"></script>
+    
+    <style>
+    
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.5);
+        padding:.5rem;-webkit-transition:.6s background;
+        transition:.6s background
+    }a.mn:hover{
+        background:rgba(0,0,0,.9)
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    .bg-ijo{
+        background: rgba(173,202,7,1);
+        background: -moz-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,202,7,1)), color-stop(99%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+        background: -o-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adca07', endColorstr='#ffffff', GradientType=0 );
+    }
+    .bg-biru{
+        background: rgba(82,191,199,1);
+        background: -moz-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,191,199,1)), color-stop(16%, rgba(110,201,208,1)), color-stop(100%, rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+        background: -o-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52bfc7', endColorstr='#ffffff', GradientType=0 );
+    }
+    .header_jdul{
+        color: #313131;
+        font-weight: bolder;
+        text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    }
+    </style>
+    <script>
+    $(function(){
+        
+        //$(document.body).append('<div id="page-loader">Loading...</div>');
+        $(window).on("beforeunload", function(){
+            //$('#page-loader').fadeIn(1000).delay(10000).fadeOut(1000);
+            $('#loadmdl').modal('show');
+        });
+    });
+    </script>
+	<title>Untitled 2</title>
+</head>
+
+<body>
+<div id="loadmdl" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="margin-top: 10%;">
+  <div class="modal-dialog modal-sm">
+    <div style="background: url('logotasik.png') no-repeat; background-size: 40%;">
+        <img src="loading.gif"/>
+    </div>
+  </div>
+</div>
+<div class="container presenter" data-role="presenter" data-height="40%" data-easing="swing" style="width: 100%;">
+    <div class="scene">
+        <div class="act bg-biru fg-black" style="display: none;">
+             <div class="actor" data-position="10,100">
+                    <h4 class="header_jdul" style="color: white;"><span class="mif-water mif-3x" style="color: lightblue;"></span> IRIGASI</h4>
+                    <hr style="margin-top: 0;"/>
+                </div>
+             <div class="tile-group" style="left: 0px;">
+                
+                <div class="tile-container">
+                    <div class="actor" data-position="50,10">
+                        <div class="tile bg-teal fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content">
+                                <img src="pdam-malang.jpg" style="width: 100%;" height="100%"/>
+                            </div>
+                            <span class="tile-label"><span class="mif-cog"></span> Peraturan</span>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,170">
+                        <div class="tile bg-darkGreen fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-shopping-basket"></span>
+                            </div>
+                            <span class="tile-label">SDAT</span>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,330">
+                        <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-skype"></span>
+                            </div>
+                            <div class="tile-label">Kegiatan</div>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,490">
+                        <div class="tile bg-darkBlue fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-cloud"></span>
+                            </div>
+                            <span class="tile-label">Teknis</span>
+                        </div>
+                    </div>
+                    
+                    <div class="actor" data-position="50,650">
+                        <div class="tile bg-darkBlue fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-cloud"></span>
+                            </div>
+                            <span class="tile-label">Statistik Air Tanah</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="act bg-ijo fg-black" style="display: none;">
+            <div class="actor" data-position="10,100">
+                <h4 class="header_jdul" style="color: whitesmoke;"><span class="mif-cloud mif-3x" style="color: lightgreen;"></span> SUMBER DAYA AIR</h1>
+                
+            </div>
+            <div class="tile-group" style="left: 0px;">
+                
+                <div class="tile-container">
+                    <div class="actor" data-position="50,10">
+                        <div class="tile" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content">
+                                <img src="pdam-malang.jpg" style="width: 100%;" height="100%"/>
+                            </div>
+                            <span class="tile-label"><span class="mif-cog"></span> Peraturan</span>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,170">
+                        <div class="tile bg-darkGreen fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-shopping-basket"></span>
+                            </div>
+                            <span class="tile-label">Inventarisasi Data Irigasi</span>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,330">
+                        <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <img src="pdam-malang.jpg" style="width: 100%;" height="100%"/>
+                            </div>
+                            <div class="tile-label">Pembangunan Irigasi</div>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,490">
+                        <div class="tile bg-darkBlue fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-cloud"></span>
+                            </div>
+                            <span class="tile-label">Teknis</span>
+                        </div>
+                    </div>
+                    <div class="actor" data-position="50,650">
+                        <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                            <div class="tile-content iconic">
+                                <span class="icon mif-skype"></span>
+                            </div>
+                            <div class="tile-label">Statistik Irigasi</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="height: 5%;">
+<h3 class="header_jdul text-center">SISTEM INFORMASI PENGELOLAAN SUMBER DAYA AIR (SIPSDA) </h3>
+</div>
+<div class="container" style="height: 15%;background: black; width: 100%;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <a class="mn" title="Bidang Energi" href="sda.htm"><span class="mif-water fg-green mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Sumber Daya Air</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="text-center">
+                <a class="mn" href="index.htm"><span class="mif-apps fg-white mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Home</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p text-center">
+                <a class="mn" href="irigasi.htm" title="Irigasi"><span class="mif-cloud fg-blue mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Irigasi</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="container" style="width: 100%;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="cell">
+                <div class="image-container bordered handing image-format-hd" style="width: 100%; outline: lightgreen 1px solid;">
+                    <div class="frame" >
+                        <img src="waterfall.jpg" style="max-height: 200px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="logotasik" style="margin-top: 10px;">
+                <img src="logotasik.png" style="margin-left: 30%; width: 40%; height:180px;"/>
+            </div>
+            <div class="text-center">
+                <p>DINAS PU BINA MARGA DAN PENGAIRAN</p>
+                <p><b>KABUPATEN TASIKMALAYA</b></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="cell">
+                <div class="image-container bordered handing image-format-hd" style="width: 100%; outline: lightblue 1px solid;">
+                    <div class="frame" >
+                        <img src="sawaah.jpg" style="max-height: 200px;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

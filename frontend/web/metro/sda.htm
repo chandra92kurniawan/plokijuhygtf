@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro-icons.min.css"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Metro-UI-CSS-master/build/js/metro.min.js"></script>
+    <style>
+    .tile-group span.tile-group-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    body{
+        background: url('waterfall.jpg') no-repeat;
+        background-size: cover;
+    }
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.9);
+        padding:.5rem;
+        -webkit-transition:.6s background;
+        transition:.6s background;
+    }
+    a.mn:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    p.title-mn{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    .header_jdulb{
+        color: rgb(237, 220, 220);
+        text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+    }
+    </style>
+    <script>
+    $(function(){
+        //$(document.body).append('<div id="page-loader">Loading...</div>');
+        $(window).on("beforeunload", function(){
+            //$('#page-loader').fadeIn(1000).delay(10000).fadeOut(1000);
+            $('#loadmdl').modal('show');
+        });
+    });
+    $(function(){
+        
+        //$('.tile-group-title').slideDown();
+        //$(".jdl-tile").animate({top: '19%'});
+        $(".jdl-tile").fadeIn(1000,function(){
+            $(".jdl-tile").animate({top: '19%'},function(){
+                
+            });
+        });
+        //$(".jdl-tile").animate({top: '19%'});
+        //$(".tile-container").animate({left: '30%'});
+    });
+    </script>
+	<title>Untitled 2</title>
+</head>
+
+<body>
+<div id="loadmdl" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="margin-top: 10%;">
+  <div class="modal-dialog modal-sm">
+    <div style="background: url('logotasik.png') no-repeat; background-size: 40%;">
+        <img src="loading.gif"/>
+    </div>
+  </div>
+</div>
+<div class="container" style="padding-top: 20px;">
+    <div class="thumb-header">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="logotasik.png" style="width: 100%;"/>
+            </div>
+            <div class="col-md-10">
+                <h3 class="header_jdulb text-center">SISTEM INFORMASI PENGELOLAAN SUMBER DAYA AIR (SIPSDA)</h3>
+                <h5 class="text-center header_jdulb">DINAS PU BINA MARGA DAN PENGAIRAN KABUPATEN TASIKMALAYA</h5>
+                <hr style="margin-top: 0;"/>
+                <h3 class="header_jdulb"><span class="mif-water"></span> SUMBER DAYA AIR</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height: 270px;">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="sda_berita.htm" class="tile bg-teal fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content">
+                        <img src="pdam-malang.jpg" style="width: 100%;" height="100%"/>
+                    </div>
+                    <span class="tile-label"><span class="mif-cog"></span> Peraturan</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-darkGreen fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-shopping-basket"></span>
+                    </div>
+                    <span class="tile-label">Inventarisasi Data Irigasi</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <img src="pdam-malang.jpg" style="width: 100%;" height="100%"/>
+                    </div>
+                    <div class="tile-label">Pembangunan Irigasi</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-darkBlue fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-cloud"></span>
+                    </div>
+                    <span class="tile-label">Teknis</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-skype"></span>
+                    </div>
+                    <div class="tile-label">Statistik Irigasi</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-skype"></span>
+                    </div>
+                    <div class="tile-label">Statistik Irigasi</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="tile bg-cyan fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon mif-skype"></span>
+                    </div>
+                    <div class="tile-label">Statistik Irigasi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="width: 100%; margin-top: 20px;">
+        <div class="row">
+        <div class="col-md-2">
+            <div class="text-center">
+                <a class="mn" title="Bidang Energi" href="sda.htm"><span class="mif-water fg-green mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Sumber Daya Air</p>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <div class="text-center">
+                <a class="mn" href="index.htm"><span class="mif-apps fg-white mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Home</p>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-2">
+            <div class="p text-center" style="margin-left: 50px;">
+                <a class="mn" href="irigasi.htm" title="Irigasi"><span class="mif-cloud fg-blue mif-4x"></span></a>
+                <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Irigasi</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+</div>
+
+</body>
+</html>

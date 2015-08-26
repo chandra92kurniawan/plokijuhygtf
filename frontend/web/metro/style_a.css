@@ -1,0 +1,43 @@
+a.mn{
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    background:rgba(0,0,0,.5);
+    padding:.5rem;-webkit-transition:.6s background;
+    transition:.6s background
+}a.mn:hover{
+    background:rgba(0,0,0,.9)
+}
+.tile:hover{
+    outline: white 1px solid;
+    box-shadow: 1px 1px 7px 1px white;
+}
+.bg-ijo{
+    background: rgba(173,202,7,1);
+    background: -moz-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(173,202,7,1)), color-stop(99%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(173,202,7,1) 0%, rgba(255,255,255,1) 99%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adca07', endColorstr='#ffffff', GradientType=0 );
+}
+.bg-biru{
+    background: rgba(82,191,199,1);
+    background: -moz-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(82,191,199,1)), color-stop(16%, rgba(110,201,208,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(82,191,199,1) 0%, rgba(110,201,208,1) 16%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52bfc7', endColorstr='#ffffff', GradientType=0 );
+}
+.header_jdul{
+    color: #313131;
+    font-weight: bolder;
+}
+.header_jdul{
+    color: #313131;
+    font-weight: bolder;
+    text-shadow: rgb(3, 3, 3) 1px 1px 1px;
+}

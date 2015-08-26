@@ -1,0 +1,67 @@
+@font-face{
+    font-family: app-font;
+    src: url(bootstrap-3.3.5-dist/fonts/segoeui.ttf);
+}
+.tile-group span.tile-group-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    font-family: app-font;
+    background: url('bg-patern.png') repeat;
+}
+a.mn{
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    background:rgba(0,0,0,.9);
+    padding:.5rem;
+    -webkit-transition:.6s background;
+    transition:.6s background;
+}
+a.mn:hover{
+    outline: white 1px solid;
+    box-shadow: 1px 1px 7px 1px white;
+}
+p.title-mn{
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.tile:hover{
+    outline: white 1px solid;
+    box-shadow: 1px 1px 7px 1px white;
+}
+.header_jdul{
+    color: #313131;
+    font-weight: bolder;
+}
+.header_jdul_ex{
+    color: #313131;
+    font-weight: bolder;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+hr{
+    background: gray;
+}
+.thumb-header{
+    margin-bottom: 15px;
+}
+footer div p{
+    color: white;
+}
+.panel{
+    margin-top: 5px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="GallerySoft.info" />
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro.min.css"/>
+    <link rel="stylesheet" href="Metro-UI-CSS-master/build/css/metro-icons.min.css"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Metro-UI-CSS-master/build/js/metro.min.js"></script>
+    <style>
+    .tile-group span.tile-group-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    body{
+        background: url('bg-patern.png') repeat;
+    }
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.9);
+        padding:.5rem;
+        -webkit-transition:.6s background;
+        transition:.6s background;
+    }
+    a.mn:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    p.title-mn{
+        font-size: 15px;
+        font-weight: bold;
+        color: whitesmoke;
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    .header_jdul{
+        color: #313131;
+        font-weight: bolder;
+        text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    }
+    
+    hr{
+        background: gray;
+    }
+    .thumb-header{
+        margin-bottom: 15px;
+    }
+    </style>
+    <script>
+    $(function(){
+        //$(document.body).append('<div id="page-loader">Loading...</div>');
+        $(window).on("beforeunload", function(){
+            //$('#page-loader').fadeIn(1000).delay(10000).fadeOut(1000);
+            $('#loadmdl').modal('show');
+        });
+    });
+    $(function(){
+        $(".panel").panel();
+        //$('.tile-group-title').slideDown();
+        //$(".jdl-tile").animate({top: '19%'});
+        $(".jdl-tile").fadeIn(1000,function(){
+            $(".jdl-tile").animate({top: '19%'});
+        });
+        //$(".jdl-tile").animate({top: '19%'});
+        //$(".tile-container").animate({left: '30%'});
+    });
+    </script>
+	<title>Untitled 2</title>
+</head>
+
+<body>
+<div id="loadmdl" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" style="margin-top: 10%;">
+  <div class="modal-dialog modal-sm">
+    <div style="background: url('logotasik.png') no-repeat; background-size: 40%;">
+        <img src="loading.gif"/>
+    </div>
+  </div>
+</div>
+<div class="main container" style="width: 100%;">
+    <div class="container" style="padding-top: 20px;">
+        <div class="thumb-header">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="logotasik.png" style="width: 100%;"/>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="header_jdul text-center">SISTEM INFORMASI PENGELOLAAN SUMBER DAYA AIR (SIPSDA)</h3>
+                    <h5 class="text-center">DINAS PU BINA MARGA DAN PENGAIRAN KABUPATEN TASIKMALAYA</h5>
+                    <hr style="margin-top: 0;"/>
+                    <h3 style="color: black;"><span class="mif-water"></span> SUMBER DAYA AIR</h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <a href="sda_berita.htm" class="mn tile-small bg-blue" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon fg-white mif-home"></span>
+                    </div>
+                </a>
+                <a href="sda_map.htm" class="mn tile-small bg-green" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon fg-white mif-earth"></span>
+                    </div>
+                </a>
+                <a href="sda_video.htm" class="mn tile-small bg-black" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                    <div class="tile-content iconic">
+                        <span class="icon fg-white mif-video-camera"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-11">
+                <div class="panel">
+                    <div class="heading">
+                        <span class="icon mif-earth"></span>
+                        <span class="title">Peta</span>
+                    </div>
+                    <div class="content">
+                         <img src="peta_tasikmalaya.JPG" class="thumbnail" style="width: 100%; max-height: 500px;"/>
+                    </div>
+                </div>
+    
+            </div>
+        </div>            
+    </div>
+    <div class="container" style="height: 15%;width: 90%; margin-top: 20px; margin-left: 10%;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" title="Bidang Energi" href="sda.htm"><span class="mif-water fg-green mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Sumber Daya Air</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="text-center">
+                    <a class="mn" href="index.htm"><span class="mif-apps fg-white mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Home</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p text-center">
+                    <a class="mn" href="irigasi.htm" title="Irigasi"><span class="mif-cloud fg-blue mif-4x"></span></a>
+                    <p style="font-weight: bolder; color: wheat; font-size: 15px;" class="title-mn">Irigasi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

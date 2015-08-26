@@ -1,0 +1,48 @@
+@font-face{
+        font-family: app-font;
+        src: url(bootstrap-3.3.5-dist/fonts/segoeui.ttf);
+    }
+    .tile-group span.tile-group-title{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    body{
+        font-family: app-font;
+        
+        background: rgba(6,5,46,1);
+        background: -moz-linear-gradient(top, rgba(6,5,46,1) 0%, rgba(107,208,255,1) 0%, rgba(56,106,255,1) 0%, rgba(15,35,255,1) 0%, rgba(238,238,240,1) 99%, rgba(240,240,240,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(6,5,46,1)), color-stop(0%, rgba(107,208,255,1)), color-stop(0%, rgba(56,106,255,1)), color-stop(0%, rgba(15,35,255,1)), color-stop(99%, rgba(238,238,240,1)), color-stop(100%, rgba(240,240,240,1)));
+        background: -webkit-linear-gradient(top, rgba(6,5,46,1) 0%, rgba(107,208,255,1) 0%, rgba(56,106,255,1) 0%, rgba(15,35,255,1) 0%, rgba(238,238,240,1) 99%, rgba(240,240,240,1) 100%);
+        background: -o-linear-gradient(top, rgba(6,5,46,1) 0%, rgba(107,208,255,1) 0%, rgba(56,106,255,1) 0%, rgba(15,35,255,1) 0%, rgba(238,238,240,1) 99%, rgba(240,240,240,1) 100%);
+        background: -ms-linear-gradient(top, rgba(6,5,46,1) 0%, rgba(107,208,255,1) 0%, rgba(56,106,255,1) 0%, rgba(15,35,255,1) 0%, rgba(238,238,240,1) 99%, rgba(240,240,240,1) 100%);
+        background: linear-gradient(to bottom, rgba(6,5,46,1) 0%, rgba(107,208,255,1) 0%, rgba(56,106,255,1) 0%, rgba(15,35,255,1) 0%, rgba(238,238,240,1) 99%, rgba(240,240,240,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06052e', endColorstr='#f0f0f0', GradientType=0 );
+    }
+    a.mn{
+        display:inline-block;
+        color:#fff;
+        text-decoration:none;
+        background:rgba(0,0,0,.9);
+        padding-top:17px;
+        -webkit-transition:.6s background;
+        transition:.6s background;
+        width: 80px;
+        height: 80px;
+    }
+    a.mn:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    p.title-mn{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+    .tile:hover{
+        outline: white 1px solid;
+        box-shadow: 1px 1px 7px 1px white;
+    }
+    .header_jdulb{
+        color: #ddd;
+        text-shadow: #000 0px 0px 1px;
+    }
