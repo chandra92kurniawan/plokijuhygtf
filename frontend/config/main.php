@@ -40,7 +40,7 @@ return [
             'class' => 'yii\web\urlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'baseUrl' => '/project/task6/frontend/web/index.php?r=',
+            'baseUrl' => '/project/plokijuhygtf/frontend/web/index.php?r=',
         ],
         
     ],

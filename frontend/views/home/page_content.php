@@ -5,6 +5,7 @@
 /* @var $model \frontend\models\ContactForm */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 //use yii\bootstrap\ActiveForm;
 //use yii\captcha\Captcha;
 
@@ -12,11 +13,11 @@ use yii\helpers\Html;
 //$this->judul="SUMBER DAYA AIR";
 //$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="row"><div class="col-md-2"></div><div class="col-md-10"><h3 class="header_jdulb"><span class="<?php echo $kelompok->icon;?>"></span> <?php echo strtoupper($kelompok->nama_kelompok);?></h3></div> </div>
+<!--<div class="row"><div class="col-md-2"></div><div class="col-md-10"><h3 class="header_jdulb"><span class="<?php echo $kelompok->icon;?>"></span> <?php echo strtoupper($kelompok->nama_kelompok);?></h3></div> </div>-->
         <div class="row">
             <?php foreach($data as $val){?>
             <div class="col-md-2">
-                <a href="sda_berita.htm" class="tile bg-teal fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
+                <a href="<?php echo Url::to(array('home/sub','kl'=>$kelompok->id_kelompok,'sb'=>$val->id_menu));?>" class="tile bg-teal fg-white" data-role="tile" style="opacity: 1; transform: scale(1); transition: 0.3s;">
                     <div class="tile-content">
                         <img src="<?= Yii::$app->request->baseUrl;?>/uploads/menu/<?php echo $val->gambar;?>" style="width: 100%;" height="100%"/>
                     </div>

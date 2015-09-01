@@ -15,7 +15,7 @@ AppAsset::register($this);
 ?>
 <?php $this->beginPage('@app/views/layouts/main.php') ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
+<html lang="<?php echo Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +43,7 @@ AppAsset::register($this);
                 <h3 class="header_jdulb text-center">SISTEM INFORMASI PENGELOLAAN SUMBER DAYA AIR (SIPSDA)</h3>
                 <h5 class="text-center header_jdulb">DINAS PU BINA MARGA DAN PENGAIRAN KABUPATEN TASIKMALAYA</h5>
                 <hr style="margin-top: 0;"/>
-                <!--<h3 class="header_jdulb"><span class="mif-water"></span> SUMBER DAYA AIR</h3>-->
+                <h3 class="header_jdulb"><span class="<?=Yii::$app->params['icon'];?>"></span> <?=Yii::$app->params['kelompok'];?></h3>
             </div>
         </div>
     </div>
